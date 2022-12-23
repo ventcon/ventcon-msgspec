@@ -1,2 +1,2 @@
-# ventCon-msgSpec
+# ventcon-msgspec
 The specification of the messaging format for my ventCon project
