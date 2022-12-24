@@ -1,5 +1,8 @@
 # ventcon-msgspec
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/ventcon/ventcon-msgspec.svg)](https://pkg.go.dev/github.com/ventcon/ventcon-msgspec)
+[![CI](https://github.com/ventcon/ventcon-msgspec/actions/workflows/ci.yml/badge.svg)](https://github.com/ventcon/ventcon-msgspec/actions/workflows/ci.yml)
+
 The specification of the messaging format for my ventcon project.
 
 ## Specification
