@@ -1,3 +1,3 @@
-module github.com/neumantm/ventCon-msgSpec
+module github.com/ventcon/ventcon-msgspec
 
 go 1.19
