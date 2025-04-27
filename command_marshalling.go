@@ -62,6 +62,12 @@ func (c *commandMessage) UnmarshalJSON(b []byte) error {
 	default:
 		return errors.New("unknown command type")
 	}
+	if c.RawCommand == nil {
+		emptyObject := json.RawMessage{
+			'{', '}',
+		}
+		c.RawCommand = &emptyObject
+	}
 	err = json.Unmarshal(*c.RawCommand, c.Command_)
 	if err != nil {
 		return err

@@ -32,6 +32,16 @@ func TestCommandMessageDeserialization(t *testing.T) {
 	test.True(t, val.RemoteCommander)
 }
 
+func TestCommandMessageDeserializationWithMissingCommand(t *testing.T) {
+	message := EmptyCommandMessage()
+	err := json.Unmarshal([]byte("{\"address\":123,\"commandType\":\"pollVentilatorNow\"}"), &message)
+	must.NoError(t, err)
+	test.Eq(t, 123, message.Address())
+
+	_, ok := message.Command().(*PollVentilatorNowCommand)
+	test.True(t, ok)
+}
+
 func TestAllCommandMessagesSerialization(t *testing.T) {
 	testCases := []struct {
 		name           string
