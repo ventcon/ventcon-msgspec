@@ -70,25 +70,25 @@ nats pub ventcon.command.50 '{"address":50,"commandType":"setRemoteCommander","c
 Those are the different command payloads currently supported:
 
 ```json
-'{"address":50,"commandType":"pollVentilatorNow", "command": {}}'
+{"address":50,"commandType":"pollVentilatorNow", "command": {}}
 ```
 
 ```json
-'{"address":50,"commandType":"setRemoteCommander", "command": {"remoteCommander": true}}'
+{"address":50,"commandType":"setRemoteCommander", "command": {"remoteCommander": true}}
 ```
 
 ```json
-'{"address":50,"commandType":"setVentilationMode", "command": {"ventilationMode": true}}'
+{"address":50,"commandType":"setVentilationMode", "command": {"ventilationMode": true}}
 ```
 
 ```json
-'{"address":50,"commandType":"setIntakeAirLevel", "command": {"intakeAirLevel": 1}}'
+{"address":50,"commandType":"setIntakeAirLevel", "command": {"intakeAirLevel": 1}}
 ```
 
 ```json
-'{"address":50,"commandType":"setExhaustAirLevel", "command": {"exhaustAirLevel": 1}}'
+{"address":50,"commandType":"setExhaustAirLevel", "command": {"exhaustAirLevel": 1}}
 ```
 
 ```json
-'{"address":50,"commandType":"setBothAirLevel", "command": {"intakeAirLevel": 1, "exhaustAirLevel": 1}}'
+{"address":50,"commandType":"setBothAirLevel", "command": {"intakeAirLevel": 1, "exhaustAirLevel": 1}}
 ```
